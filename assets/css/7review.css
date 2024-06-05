@@ -1,0 +1,131 @@
+.review {
+    padding: 104px 0 52px;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: transparent;
+    color: #ff5b2e;
+    width: 54px;
+    height: 54px;
+    border: 1.5px solid #ffd1c4;
+    border-radius: 50%;
+}
+
+.review__control:hover {
+    cursor: pointer;
+    background: #ff5b2e;
+    border-color: #ff5b2e;
+    color: #fff;
+}
+
+.review__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.review__list {
+    display: flex;
+}
+
+.review-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    column-gap: 115px;
+}
+
+.review-item__media {
+    position: relative;
+    flex-shrink: 0;
+    margin-top: -52px;
+    width: 274px;
+    border-radius: 137px;
+}
+
+.review-item__media::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    border-radius: inherit;
+    background: #ffaa54;
+    height: 82%;
+}
+
+.review-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: inherit;
+    width: 100%;
+}
+
+.review-item__content {
+    margin-top: 28px;
+}
+
+.review-item__quote {
+    color: #000;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    width: 553px;
+    margin-top: 24px;
+}
+
+.review-item__author {
+    font-family: "Sora", sans-serif;
+    display: flex;
+    align-items: center;
+    color: #282828;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 34px;
+}
+
+.review-item__author::before {
+    content: "";
+    display: inline-block;
+    background: #000;
+    width: 20px;
+    height: 2px;
+    margin-right: 8px;
+    border-radius: 1px;
+}
+
+.review__dots {
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.review__dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #ff5b2e;
+    border-radius: 99px;
+}
+
+.review__dot:hover {
+    cursor: pointer;
+    background: #ff5b2e;
+}
+
+.review__dot--active {
+    background: #ff5b2e;
+    width: 24px;
+}
